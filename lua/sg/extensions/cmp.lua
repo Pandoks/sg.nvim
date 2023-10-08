@@ -101,6 +101,11 @@ source.complete = function(self, params, callback)
         detail = trimmed,
         label = trimmed,
 
+        cmp = {
+          kind_hl_group = "CmpItemKindCopilot",
+          kind_text = "Copilot",
+        },
+
         -- Attempt to adjust indentation
         insertTextMode = cmp_types.InsertTextMode.AdjustIndentation,
 
@@ -113,11 +118,6 @@ source.complete = function(self, params, callback)
 
       table.insert(items, completion_item)
     end
-
-    items.cmp = {
-      kind_hl_group = "CmpItemKindCody",
-      kind_text = "Cody",
-    }
 
     callback {
       items = items,
