@@ -102,8 +102,8 @@ source.complete = function(self, params, callback)
         label = trimmed,
 
         cmp = {
-          kind_hl_group = "CmpItemKindCopilot",
-          kind_text = "Copilot",
+          kind_hl_group = "CmpItemKindCody",
+          kind_text = "Cody",
         },
 
         -- Attempt to adjust indentation
