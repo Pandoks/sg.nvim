@@ -102,7 +102,7 @@ source.complete = function(self, params, callback)
         label = trimmed,
 
         -- Mark as snippet, not text.
-        kind = "CmpItemKindCody",
+        kind = cmp_types.CompletionItemKind.Cody,
 
         -- Attempt to adjust indentation
         insertTextMode = cmp_types.InsertTextMode.AdjustIndentation,
