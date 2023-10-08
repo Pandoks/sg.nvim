@@ -114,6 +114,11 @@ source.complete = function(self, params, callback)
       table.insert(items, completion_item)
     end
 
+    items.cmp = {
+      kind_hl_group = "CmpItemKindCody",
+      kind_text = "Cody",
+    }
+
     callback {
       items = items,
       isIncomplete = false,
